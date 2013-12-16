@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<ejb-jar>
+	<description>Ejemplo de EJB Simple</description> 
+	<enterprise-beans> 
+		<session> 
+			<display-name>Bean HolaMundo</display-name> 
+			<ejb-name>HolaMundo</ejb-name> 
+			<home>com.saludo.HolaMundoHome</home> 
+			<remote>com.saludo.HolaMundoRemote</remote> 
+			<ejb-class>com.saludo.HolaMundoBean</ejb-class> 
+				<session-type>Stateless</session-type> 
+			<transaction-type>Bean</transaction-type> 
+		</session> 
+	</enterprise-beans> 
+</ejb-jar>
