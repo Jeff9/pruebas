@@ -1,11 +1,17 @@
 package pruebaCron;
 
-public class Trabajo {
+import org.quartz.Job;
+import org.quartz.JobExecutionContext;
+import org.quartz.JobExecutionException;
+
+public class Trabajo implements Job{
 	int i=0;
 
-	public Trabajo(){
+	
+	@Override
+	public void execute(JobExecutionContext arg0) throws JobExecutionException {
+		System.out.println("Ejecucion:"  + i++); 
 		
-		System.out.println("Ejecucion:"  + i++);
 	}
 	
 }
